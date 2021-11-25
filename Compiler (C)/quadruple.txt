@@ -1,0 +1,63 @@
+ operator , arg1 , arg2 , result
+ begin , func , main , 
+ , 5 , , int.temp_0
+ , int.temp_0 , , int.n.0
+ , 6 , , int.temp_1
+ , int.temp_1 , , int.d.0
+ , int.arr.1(9) , , decl
+ , int.brr.1(9) , , decl
+ , int.crr.1(9) , , decl
+ , 0 , , int.temp_2
+ , int.temp_2 , , int.i.1
+label_0:
+ , 3 , , int.temp_4
+ < , int.i.1 , int.temp_4 , int.temp_3
+if , int.temp_3 , label_1 , goto
+ , label_2 , , goto
+label_1:
+ , 0 , , int.temp_5
+ , int.temp_5 , , int.j.1
+label_4:
+ , 3 , , int.temp_7
+ < , int.j.1 , int.temp_7 , int.temp_6
+if , int.temp_6 , label_5 , goto
+ , label_6 , , goto
+label_5:
+ , int.i.1 , , int.temp_8
+ * , int.temp_8 , 3 , int.temp_8
+ + , int.temp_8 , int.j.1 , int.temp_8
+ , int.arr.1(int.temp_8) , , read
+ , int.i.1 , , int.temp_9
+ * , int.temp_9 , 3 , int.temp_9
+ + , int.temp_9 , int.j.1 , int.temp_9
+ , int.i.1 , , int.temp_10
+ * , int.temp_10 , 3 , int.temp_10
+ + , int.temp_10 , int.j.1 , int.temp_10
+ , int.arr.1(int.temp_9) , , int.brr.1(int.temp_10)
+ , int.i.1 , , int.temp_12
+ * , int.temp_12 , 3 , int.temp_12
+ + , int.temp_12 , int.j.1 , int.temp_12
+ , int.i.1 , , int.temp_13
+ * , int.temp_13 , 3 , int.temp_13
+ + , int.temp_13 , int.j.1 , int.temp_13
+ + , int.arr.1(int.temp_12) , int.brr.1(int.temp_13) , int.temp_11
+ , int.i.1 , , int.temp_14
+ * , int.temp_14 , 3 , int.temp_14
+ + , int.temp_14 , int.j.1 , int.temp_14
+ , int.temp_11 , , int.crr.1(int.temp_14)
+ , int.i.1 , , int.temp_15
+ * , int.temp_15 , 3 , int.temp_15
+ + , int.temp_15 , int.j.1 , int.temp_15
+ , int.crr.1(int.temp_15) , , print
+ , "\n" , , print
+label_7:
+ + , int.j.1 , 1 , int.j.1
+ , label_4 , , goto
+label_6:
+label_3:
+ + , int.i.1 , 1 , int.i.1
+ , label_0 , , goto
+label_2:
+ , 0 , , int.temp_16
+ , int.temp_16 , , return
+ end , func , , 
