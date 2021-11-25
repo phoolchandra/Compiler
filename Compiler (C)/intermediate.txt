@@ -1,0 +1,62 @@
+func begin main
+int.temp_0 = 5
+int.n.0 = int.temp_0
+int.temp_1 = 6
+int.d.0 = int.temp_1
+decl int.arr.1(9)
+decl int.brr.1(9)
+decl int.crr.1(9)
+int.temp_2 = 0
+int.i.1 = int.temp_2
+label_0:
+int.temp_4 = 3
+int.temp_3 = int.i.1 < int.temp_4
+if int.temp_3 goto label_1
+goto label_2
+label_1:
+int.temp_5 = 0
+int.j.1 = int.temp_5
+label_4:
+int.temp_7 = 3
+int.temp_6 = int.j.1 < int.temp_7
+if int.temp_6 goto label_5
+goto label_6
+label_5:
+int.temp_8 = int.i.1
+int.temp_8 = int.temp_8 * 3
+int.temp_8 = int.temp_8 + int.j.1
+read int.arr.1(int.temp_8)
+int.temp_9 = int.i.1
+int.temp_9 = int.temp_9 * 3
+int.temp_9 = int.temp_9 + int.j.1
+int.temp_10 = int.i.1
+int.temp_10 = int.temp_10 * 3
+int.temp_10 = int.temp_10 + int.j.1
+int.brr.1(int.temp_10) = int.arr.1(int.temp_9)
+int.temp_12 = int.i.1
+int.temp_12 = int.temp_12 * 3
+int.temp_12 = int.temp_12 + int.j.1
+int.temp_13 = int.i.1
+int.temp_13 = int.temp_13 * 3
+int.temp_13 = int.temp_13 + int.j.1
+int.temp_11 = int.arr.1(int.temp_12) + int.brr.1(int.temp_13)
+int.temp_14 = int.i.1
+int.temp_14 = int.temp_14 * 3
+int.temp_14 = int.temp_14 + int.j.1
+int.crr.1(int.temp_14) = int.temp_11
+int.temp_15 = int.i.1
+int.temp_15 = int.temp_15 * 3
+int.temp_15 = int.temp_15 + int.j.1
+print int.crr.1(int.temp_15)
+print "\n" 
+label_7:
+int.j.1 = int.j.1 + 1
+goto label_4
+label_6:
+label_3:
+int.i.1 = int.i.1 + 1
+goto label_0
+label_2:
+int.temp_16 = 0
+return int.temp_16
+func end

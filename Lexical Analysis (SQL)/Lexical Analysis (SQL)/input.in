@@ -1,0 +1,6 @@
+SELECT < salary<200 > (Employee);
+SELECT < name='John' AND salary < 200 OR name='saurabh' > (Employee) PROJECT < salary> (Employee);
+PROJECT < name, salary> (Employee);
+(Employee) CARTESIAN_PRODUCT (Department);
+(Employee) CARTESIAN_PRODUCT Department);
+(Employee) EQUI_JOIN <Employee.empId != Department.eId>(Department);

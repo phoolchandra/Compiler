@@ -1,0 +1,29 @@
+mult_stmt -> 	statement SEMI mult_stmt |
+				EOF
+
+statment ->		ID ASSIGN exp1 |
+				IF exp1 THEN statement |
+				WHILE exp1 DO statement |
+				BEGIN stmt_list END
+				
+exp1 ->			expression |
+				expression EQ expression |
+				expression LT expression |
+				expression GT expression 
+
+stmt_list -> 	statement SEMI stmt_list |
+				epsilon
+
+
+expression -> 	term expression'
+expression' -> 	PLUS term expression' |  
+				MINUS term expression' |  
+				epsilon
+
+term -> 		factor term'
+term' -> 		TIMES factor term' |  
+				DIV factor term' |  
+				epsilon
+
+factor -> 		NUM or ID |
+				LP exp1 RP
